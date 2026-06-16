@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Myspace Profile</title>
+<link rel="stylesheet" href="styles.css"
+<body>
+    <marquee></marquee>
+    <center>
+<div class="web">
+<table border="3" cellpadding="10" cellspacing="5" width="370" height="440">
+<tr align="center" height="150">
+<td colspan="2" align="left" valign="top" bgcolor="purple"
+<h1 style="font-family: 'Courier New', Courier, monospace;"><b>C00lB1nt4ng</b></h1>
+<img src="https://i.ibb.co.com/4Zt1gQxb/813a942e5502221de046e98d6088e308.jpg" width="320" height="320">
+
+
+
+<b style="font-family: 'Courier New', Courier, monospace;">"y0ur favorite type of guy"</b>
+
+<br>
+<br>
+<b>12 Years Old  Male </b>
+<br>
+<b>Indonesia</b>
+</tr>
+</table>
+</div>
+<div class="gif">
+<table border="3" cellpadding="10" cellspacing="5" width="440" height="440">
+
+<tr align="center" height="150">
+<td colspan="2" bgcolor="blue">
+<h1 style="font-family: 'Courier New', Courier, monospace;">v1b3zz</h1>
+    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3o4bHV4Ymp3NWVldTUydmE0N3RtdnlldmhjOW5sZnNpMzF5dHlnZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IsW7iutkVvAtODBgbp/giphy.gif">
+<b style="font-family: 'Courier New', Courier, monospace;">b4nds pop anyth1ng th4t 1snt m41nstream yk wat im sayin</b>
+
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmhnNXllYnRocDQ1cTRqa2EzZjZiNXN6YnNjczZyY2F0eXBud3djdyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/OGwAwPDOkrLt8bf7kG/giphy.gif">
+<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDJrcWU3OW01d20zZm45OXNzaWI0OWJzbzdjaTgzZmFjbzdzMHB3YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xZuMp9rKFq9eU/giphy.gif">
+</td>
+
+</tr> 
+
+</table>
+
+
+</center>
+<div class="net">
+<table border="3" cellpadding="10" cellspacing="5" width="300" height="70" bordercolor="blue">
+
+<td colspan="1" bgcolor="blue">
+    <b style="font-family: 'Courier New', Courier, monospace;  color: white;">C00lB1nt4ng Is In Your Extended Network</b>
+</td>
+
+    
+</table>
+</div>
+<div class="cont">
+<img src="https://i.ibb.co.com/T5ZX361/a776157472d6b0120edff7ed8cc9304c.png" width="300" height="150">
+</div>
+<div class="url">
+<table border="3" bordercolor="pink" cellpadding="10" cellspacing="5" width="370" height="70" style="table-layout: fixed;">
+    <tr>
+        <td bgcolor="pink" align="center" valign="middle">
+            <b style="font-family: 'Courier New', Courier, monospace;">MySpace Url</b>
+            <br>
+            <br>
+            <b style="font-family: 'Courier New', Courier, monospace;">https://www.myspace.com/C00lB1nt4ng</b>
+        </td>
+    </tr>
+</table>
+</div>
+<style>
+    body {
+       background-image: url(https://i.ibb.co.com/zhzG4m06/4-MLy-NZ66-GSMUp7z49-Q8k3-K.jpg);
+    background-attachment: fixed; /* Keeps the gradient locked in place when you scroll */
+    margin: 0;
+    background-size: cover;
+    }
+</style>
+<div class="about">
+<table border="3" bordercolor="red" cellpadding="10" cellspacing="5" width="500" height="400">
+<tr align="center" height="150" valign="top">
+<td colspan="2" bgcolor="red">
+<h1 style="font-family: 'Courier New', Courier, monospace;">About Me</h1>
+<b style="font-family: 'Courier New', Courier, monospace;">Hey whoevers seeing this you have reached my pr0file im just a guy coding in his laptop while i was born too late im trying too put my coding skills to resurrect the 2000s so maybe you can support me ig but see you later (: </b>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div id="bullet-zone"></div>
+
+<style>
+    /* Keeps the animation field locked over the entire screen */
+    #bullet-zone {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none; /* Allows clicks to pass right through to your tables */
+        overflow: hidden;
+        z-index: 9999; /* Keeps them on top of your background */
+    }
+
+    /* Style for each individual falling element */
+    .bullet {
+        position: absolute;
+        color: #5ce1e6; /* Matching your cool neon cyan theme */
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        font-size: 20px;
+        animation: fall linear forwards;
+    }
+
+    /* The actual falling physics */
+    @keyframes fall {
+        0% {
+            transform: translateY(-20px);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(105vh);
+            opacity: 0.3; /* Fades out slightly as it hits the bottom */
+        }
+    }
+</style>
+
+<script>
+    // This function automatically creates a bullet particle
+    function createBullet() {
+        const zone = document.getElementById('bullet-zone');
+        if (!zone) return;
+
+        const bullet = document.createElement('div');
+        bullet.classList.add('bullet');
+        
+        // 1. Choose what the bullet character looks like (Change this symbol to anything you want!)
+        bullet.innerText = '*'; 
+
+        // 2. Randomize starting position across the width of the screen
+        bullet.style.left = Math.random() * 100 + 'vw';
+
+        // 3. Randomize speed so they don't fall all at once (between 1.5 and 4 seconds)
+        const fallDuration = Math.random() * 2.5 + 1.5;
+        bullet.style.animationDuration = fallDuration + 's';
+
+        zone.appendChild(bullet);
+
+        // 4. Clean up old particles so your browser doesn't lag out
+        setTimeout(() => {
+            bullet.remove();
+        }, fallDuration * 1000);
+    }
+
+    // Spawns a new particle every 100 milliseconds as soon as the window loads
+    window.addEventListener('DOMContentLoaded', () => {
+        setInterval(createBullet, 25);
+    });
+</script>
+<nav class="myspace-navbar">
+    <ul>
+        <li><a href="https://starcode864.github.io/2000swebsite/">home</a></li>
+        
+    </ul>
+</nav>
+
+</body>
+
+
+
+
+
+
+</head>
+</html>
